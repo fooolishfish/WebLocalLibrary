@@ -120,11 +120,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-STATIC_URL = '/static/'
-
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
 
@@ -133,6 +128,7 @@ import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+# 接著要處理靜態檔案(例如：圖檔、.js檔案、.css檔)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -142,6 +138,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
 
+
+# 這是用來設定靜態檔案放在Heroku雲端空間的路徑
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -150,7 +148,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
-
-ALLOWED_HOSTS = ['https://dashboard.heroku.com/apps/a2df2710-a9b7-4353-b593-6e6ba76ae7a7/activity/builds/ff253008-26e7-45ee-821c-e57b5ba1cd38','127.0.0.1']
-# For example: 
-# ALLOWED_HOSTS = ['fathomless-scrubland-30645.herokuapp.com', '127.0.0.1']
