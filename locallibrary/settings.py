@@ -138,4 +138,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['host=blooming-depths-76172.herokuapp.com.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['< https://phost=blooming-depths-76172.herokuapp.com','127.0.0.1']
