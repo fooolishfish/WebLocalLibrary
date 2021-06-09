@@ -150,3 +150,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
+
+ALLOWED_HOSTS = ['https://dashboard.heroku.com/apps/a2df2710-a9b7-4353-b593-6e6ba76ae7a7/activity/builds/ff253008-26e7-45ee-821c-e57b5ba1cd38','127.0.0.1']
+# For example: 
+# ALLOWED_HOSTS = ['fathomless-scrubland-30645.herokuapp.com', '127.0.0.1']
